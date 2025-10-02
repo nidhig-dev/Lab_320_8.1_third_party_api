@@ -2,5 +2,8 @@
     display: flex;
     width:100%;
     justify-content: space-around;
+    background-color: rgba(70, 131, 180, 0.356);
+    padding:10px;
+    color:black;
 }
 

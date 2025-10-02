@@ -7,29 +7,31 @@ import People from "./pages/People"
 import Planets from "./pages/Planets"
 import Starships from "./pages/Starships"
 import Missing from "./pages/Missing"
+import HomePage from "./pages/Homepage"
 //import components
 import NavBar from './components/Nav/NavBar'
 
 function App() {
 
-/*{
-    "films": "https://swapi.info/api/films",
-    "people": "https://swapi.info/api/people",
-    "planets": "https://swapi.info/api/planets",
-    "species": "https://swapi.info/api/species",
-    "starships": "https://swapi.info/api/starships",
-    "vehicles": "https://swapi.info/api/vehicles"
-} */
-  
+  /*{
+      "films": "https://swapi.info/api/films",
+      "people": "https://swapi.info/api/people",
+      "planets": "https://swapi.info/api/planets",
+      "species": "https://swapi.info/api/species",
+      "starships": "https://swapi.info/api/starships",
+      "vehicles": "https://swapi.info/api/vehicles"
+  } */
+
 
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       <main>
         <Routes>
-          <Route path='/people' element={<People />} />
-          <Route path='/starships' element={<Starships />} />
-          <Route path='/planets' element={<Planets />} />
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/people' element={<People/>} />
+          <Route path='/starships' element={<Starships/>} />
+          <Route path='/planets' element={<Planets/>} />
           <Route path='*' element={<Missing />} />
         </Routes>
       </main>
